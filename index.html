@@ -53,9 +53,9 @@ proporcionalmente mais curta.[3]">
 </body>
 
 <script>
-const botoes = document.querySelector("button");
-    botoes.forEach(function(botaoClicado){
-        botao.addEvenListener("click", botaoClicado)
+const botoes = document.querySelectorAll("button");
+    botoes.forEach(function(botao){
+        botao.addEventListener("click", botaoClicado)
      
    function botaoClicado () {
         console.log ("fui clicado");
